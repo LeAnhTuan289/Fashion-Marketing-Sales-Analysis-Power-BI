@@ -37,6 +37,19 @@ This dashboard visualizes fashion retail marketing campaigns and sales performan
 - E-commerce & Digital Sales Managers: to connect campaign spend to product sell-through and remaining inventory and decide which products to push, restock, or phase out.
 - Head of Sales & Marketing: to view revenue, profit, and efficiency of marketing investment at a high level, compare channels (ads vs direct sales) and guide budget allocation
 
+## 🧠 Design Thinking Process
+
+### 1️⃣ Empathize
+
+![Image](https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/e7a0a551a71b8473942029dbf9c89e333c36ed18/documents/5W1H.png)
+
+![Image](https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/e7a0a551a71b8473942029dbf9c89e333c36ed18/documents/EMPATHY.png)
+
+### 2️⃣ Define point of view 
+
+![Image](https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/e7a0a551a71b8473942029dbf9c89e333c36ed18/documents/POV.png)
+
+
 ## 📊INTERACTIVE DASHBOARD
 [**Explore the Dashboard**](https://app.powerbi.com/view?r=eyJrIjoiODNiOTdiMDEtYzQxZi00OTc3LWI4NDMtNjEyZjBkNTFkNDNkIiwidCI6ImEyYTU3NTUxLWU4N2UtNGZkYS1hMzY4LTI2NGRmNjRiMDdjYiIsImMiOjh9)
 
