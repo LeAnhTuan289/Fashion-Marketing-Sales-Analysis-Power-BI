@@ -9,14 +9,10 @@ Tool Used: Power BI
 ***
 
 ## 📑**Table of Contents**
-1. 📌[Overview](#overview)
-
-2. 📂[Dataset Description & Data Structure](#-dataset-description--data-structure)
-
-3. 🧠[Design Thinking Process](#-design-thinking-process)
-
+1. [📌 Background & Overview](#background--overview)
+2. [📂 Dataset Description & Data Structure](#dataset-description--data-structure)
+3. [🧠 Design Thinking Process](#design-thinking-process)
 4. [📊 Key Insights & Visualizations](#key-insights--visualizations)
-
 5. [🔎 Final Conclusion & Recommendation](#final-conclusion--recommendation)
 
 ## 📌Overview
@@ -220,3 +216,5 @@ From the data tables above, I created Star Schema Model as below
 4️⃣**Bring customer segments into the decisions:**
 - Use the _Product's drill through_ page to see which customer tiers and age groups respond best to each product family, and tailor campaigns accordingly (for example, dresses towards the strongest tier or age band).
 - For segments that mainly convert via direct sales, rely more on organic, CRM and store activities, and for segments that respond well to ads, focus budgets on the products that show profitable GM ROAS for them.
+
+## 🔎 Final Conclusion & Recommendation 
