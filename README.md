@@ -11,16 +11,13 @@ Tool Used: Power BI
 ## 📑**Table of Contents**
 1. 📌[Overview](#overview)
 
-2. 📊[Interactive Dashboard](#interactive-dashboard)
+2. 📂[Dataset Description & Data Structure](#-dataset-description--data-structure)
 
-3. 🔎[Key Insights & Recommendations](#key-insights--recommendations)
+3. 🧠[Design Thinking Process](#-design-thinking-process)
 
-4. 📊[Analysis Process](#-analysis-process)
+4. [📊 Key Insights & Visualizations](#key-insights--visualizations)
 
-4.1. 📂[Dataset Description & Data Structure](#-dataset-description--data-structure)
-
-4.2. 🧠[Design Thinking Process](#-design-thinking-process)
-
+5. [🔎 Final Conclusion & Recommendation](#final-conclusion--recommendation)
 
 ## 📌Overview
 🎯**Project Objectives**
@@ -36,105 +33,6 @@ This dashboard visualizes fashion retail marketing campaigns and sales performan
 - Marketing Team: to track marketing performance and decide which campaigns to scale, pause, or optimize.
 - E-commerce & Digital Sales Managers: to connect campaign spend to product sell-through and remaining inventory and decide which products to push, restock, or phase out.
 - Head of Sales & Marketing: to view revenue, profit, and efficiency of marketing investment at a high level, compare channels (ads vs direct sales) and guide budget allocation
-
-## 🧠 Design Thinking Process
-
-### 1️⃣ Empathize
-
-![Image](https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/e7a0a551a71b8473942029dbf9c89e333c36ed18/documents/5W1H.png)
-
-![Image](https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/e7a0a551a71b8473942029dbf9c89e333c36ed18/documents/EMPATHY.png)
-
-### 2️⃣ Define point of view 
-
-![Image](https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/e7a0a551a71b8473942029dbf9c89e333c36ed18/documents/POV.png)
-
-
-## 📊INTERACTIVE DASHBOARD
-[**Explore the Dashboard**](https://app.powerbi.com/view?r=eyJrIjoiODNiOTdiMDEtYzQxZi00OTc3LWI4NDMtNjEyZjBkNTFkNDNkIiwidCI6ImEyYTU3NTUxLWU4N2UtNGZkYS1hMzY4LTI2NGRmNjRiMDdjYiIsImMiOjh9)
-
-## 🔎Key Insights & Recommendations
-
-### Key Insights
-
-1️⃣ **Overview**
-
-<img width="1641" height="924" alt="Overview" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/d2fb426879c67d1bc1a9a5342ee63c87b19406b2/documents/db1.png" />
-
-- **Sales by Channel (Ad vs Direct Sales):**
-  - Total revenue is ~5bn, of which ~3bn comes from ad-driven sales => roughly 60% of revenue is ad-driven, and 40% of revenue is from direct sales. However, Gross Margin ROAS (GM ROAS) is only 0.9, meaning every 1 VND of ad spend brings back less than 1 VND in gross margin. Campaigns are therefore critical for scale but not yet efficient.
-    
-- **How is Campaign Budget allocated?**
-  - Spend is highest in Weeks 2–>4, with overall budget utilization around 80–90% and a few days of clear overspend.But overspending days do not consistently line up with higher profit or GM ROAS, and the scatterplot shows no strong link between high total spend and high Gross Margin ROAS. This suggests room to reallocate budget away from low-GM ROAS campaigns rather than just spending more.
-    
-- **Do campaigns and SKUs drive profitable growth?**
-  - Across most product categories, ads drive more revenue than direct sales, confirming that campaigns successfully push product. Yet many high-revenue categories show low or even negative GM ROAS (e.g., Áo Tách Set/ Separate Top, Váy Chiết Eo Xòe/ Fit-and-Flare Dress) while some smaller-revenue categories are more profitable (e.g., Váy Chiết Eo Ôm/ Bodycon Dress). In other words, we are buying revenue in some areas but not necessarily profitable growth, likely due to COGS and discount structure on those products.
-
-2️⃣**Campaign Performance**
-
-<img width="1181" height="663" alt="Campaign Performance" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/d2fb426879c67d1bc1a9a5342ee63c87b19406b2/documents/db2.png" />
-
-- **Overview:**
-  - Overall, Ads spend, budget utilization and ads revenue peak in weeks 2->4.
-  - Over the same period, Cost Per Acquisistion (CPA) increases while orders through campaigns decline, indicating that each conversion is getting more expensive even as we spend heavily.
-
-- **Which campaigns are doing good/ bad?**
-  - Most campaigns cluster between -2.5 and 5 GM ROAS.
-  - A few campaigns show high spend and high revenue but negative GM ROAS (e.g. AUDREY SHIRT). These are effectively buying revenue at a loss.
-  - On the other hand, some campaigns have lower spend and smaller revenue but much higher GM ROAS (e.g. KINO DRESS, LISA DRESS, MARGNET DRESS), meaning they generate more margin per VND spent.
-  - The _Top/ Bottom 10 Campaigns with Highest/ Lowest GM ROAS_ chart and _Campaign Performance_ table highlights:
-      - Top campaigns and products that deliver strong GM ROAS and are candidates for scaling.
-      - Bottom campaigns with weak GM ROAS and/or very high Ads spend that should be fixed or downsized.
-  - This supports decisions to reallocate budget away from high-spend, low-ROAS campaigns and towards high-ROAS, under-funded campaigns and SKUs.
-    
-- **Campaign Funnel & Engagement**
-  - Volume:
-      - Impressions: ~5.1M
-      - Clicks: ~41.6K → CTR ≈ 0.8%
-      - Inbox + Comments: ~11.4K
-      - Orders: ~1,684 → overall conv ≈ 0.03% of impressions
-  - Cost per step (VND):
-      - CPM ≈ 77K, CPC ≈ 9.5K, Cost Inbox+Comment ≈ 34K, CPA ≈ 234K 
-  => CPM and CPC are moderate, but very few impressions ultimately become orders, and CPA is high. The main problem sits with click/ inbox and final purchase, not at the media buying impressions. 
-  => Recommend to optimize landing pages, checkout flow, test offers, product mix, retarget on engaged users (clickers, inbox/comment) to yield more conversion and turn more users into buyers. 
-
-3️⃣**Product:**
-
-<img width="1184" height="664" alt="Customer and product" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/d2fb426879c67d1bc1a9a5342ee63c87b19406b2/documents/db3.png" />
-
-- **By product: where do ads really matter?**
-  - For most categories, ads drive more revenue than direct sale, especially Áo Tách Set/ Separate Top, Váy Chiết Eo Xòe/ Fit-and-Flare Dress, Set Quần Áo/ Outfit Set Top &  Bottom have the highest units sold and are heavily driven by ads => These are the first places to optimise campaign structure, targeting and creatives.
-  - Some categories, for example, Áo Khoác/ Jacket, Quần Tách Set/ Separate Pants have low volume overall and limited contribution from ads.
-  - Áo khoác (Jacket) has all orders (2 units ordered) from direct sales, none from ads.
-
-- **Are we allocating budget to the right products?**
-  - The dress categories, like Váy Chiết Eo Ôm/ Bodycon Dress, Váy Suông Xòe/ Loose Flared Dress, Váy Chiết Eo Xòe/ Fit-and-Flare Dress, Set váy áo/ Skirt & Top Set, sit in good area with solid budget utilization, above-average GM ROAS and healthy unit volume. These categories should be gradually scaled in campaigns.
-  - Áo Tách Set/ Separate Top stands out with high budget used and large volume but negative GM ROAS. This means we push a lot of budget into a category that doesn’t pay back in margin.
-  - Key take-away: Budget is concentrated in the right product family (dresses). However, we have over-funded low-margin categories (Áo Tách Set/ Separate Top) and under-funded high-margin ones that could be scaled.
-      - Each product has its own drill-through page showing unit economics, channel performance over time, customer tier & age, best campaigns (high GM ROAS) and preferred variants (e.g., colors, materials). This effectively turns every product into a decision card: scale, fix, or cut.
-
-### Recommendations
-
-1️⃣**Reallocate budget to what actually earns margin:**
-
-- Reduce budget on campaigns and products with high spend but negative GM ROAS, especially Áo Tách Set/ Separate Top and low-margin campaigns like AUDREY SHIRT.
-- Reallocate that budget to dress categories with positive GM ROAS and reasonable CPA (Váy Chiết Eo Ôm/ Bodycon, Váy Chiết Eo Xòe/ Fit-and-Flare, Váy Suông Xòe/ Loose Flared, Set váy áo/ Skirt & Top Sets), so more money goes into products that actually generate profit, not just revenue.
-
-2️⃣**Make the funnel more efficient from impression to order:**
-
-- Review campaigns with low CTR and high spend and either pause them or refresh audiences and creatives so we pay for fewer “empty” impressions.
-- For top-spend campaigns, check the landing and product pages (e.g., pricing, stock, messaging) and run simple A/B tests to improve conversion after the click.
-- Create basic retargeting campaigns for people who clicked or messaged but did not buy, using creatives that push best-margin products and current offers.
-
-3️⃣**Use each product’s drill-through page as a decision card:**
-- For every main product category, look at its GM ROAS, CPA, inventory %, and who buys it on the drill-through page before making budget decisions.
-- Scale products that have good GM ROAS and enough stock, fix or re-position products with high volume but low margin, and quietly stop promoting products that are weak on both sales and margin.
-
-4️⃣**Bring customer segments into the decisions:**
-- Use the _Product's drill through_ page to see which customer tiers and age groups respond best to each product family, and tailor campaigns accordingly (for example, dresses towards the strongest tier or age band).
-- For segments that mainly convert via direct sales, rely more on organic, CRM and store activities, and for segments that respond well to ads, focus budgets on the products that show profitable GM ROAS for them.
-
-## 📊 Analysis Process
 
 ## 📂 Dataset Description & Data Structure
 ### 📌 Data Source
@@ -229,9 +127,96 @@ From the data tables above, I created Star Schema Model as below
 |dim-product_list| fact-mkt_camp_by_sku_cost| dim-product_list[Mã sản phẩm] → fact-mkt_camp_by_sku_cost[Mã Sản phẩm]| One to many (1:*)|
 |dim-mkt_camp_cost| fact-mkt_camp_by_sku_cost|dim-mkt_camp_cost[Campaign Id] → fact-mkt_camp_by_sku_cost[Campaign Id]| One to many (1:*)|
 
+## 🧠 Design Thinking Process
+
+### 1️⃣ Empathize
+
+![Image](https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/e7a0a551a71b8473942029dbf9c89e333c36ed18/documents/5W1H.png)
+
+![Image](https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/e7a0a551a71b8473942029dbf9c89e333c36ed18/documents/EMPATHY.png)
+
+### 2️⃣ Define point of view 
+
+![Image](https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/e7a0a551a71b8473942029dbf9c89e333c36ed18/documents/POV.png)
 
 
+## 📊 Key Insights & Visualizations
 
+### 🔍 Dashboard Preview
 
+1️⃣ **Overview**
 
-Prioritize fixes, next iteration plan, validated solution
+<img width="1641" height="924" alt="Overview" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/d2fb426879c67d1bc1a9a5342ee63c87b19406b2/documents/db1.png" />
+
+- **Sales by Channel (Ad vs Direct Sales):**
+  - Total revenue is ~5bn, of which ~3bn comes from ad-driven sales => roughly 60% of revenue is ad-driven, and 40% of revenue is from direct sales. However, Gross Margin ROAS (GM ROAS) is only 0.9, meaning every 1 VND of ad spend brings back less than 1 VND in gross margin. Campaigns are therefore critical for scale but not yet efficient.
+    
+- **How is Campaign Budget allocated?**
+  - Spend is highest in Weeks 2–>4, with overall budget utilization around 80–90% and a few days of clear overspend.But overspending days do not consistently line up with higher profit or GM ROAS, and the scatterplot shows no strong link between high total spend and high Gross Margin ROAS. This suggests room to reallocate budget away from low-GM ROAS campaigns rather than just spending more.
+    
+- **Do campaigns and SKUs drive profitable growth?**
+  - Across most product categories, ads drive more revenue than direct sales, confirming that campaigns successfully push product. Yet many high-revenue categories show low or even negative GM ROAS (e.g., Áo Tách Set/ Separate Top, Váy Chiết Eo Xòe/ Fit-and-Flare Dress) while some smaller-revenue categories are more profitable (e.g., Váy Chiết Eo Ôm/ Bodycon Dress). In other words, we are buying revenue in some areas but not necessarily profitable growth, likely due to COGS and discount structure on those products.
+
+2️⃣**Campaign Performance**
+
+<img width="1181" height="663" alt="Campaign Performance" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/d2fb426879c67d1bc1a9a5342ee63c87b19406b2/documents/db2.png" />
+
+- **Overview:**
+  - Overall, Ads spend, budget utilization and ads revenue peak in weeks 2->4.
+  - Over the same period, Cost Per Acquisistion (CPA) increases while orders through campaigns decline, indicating that each conversion is getting more expensive even as we spend heavily.
+
+- **Which campaigns are doing good/ bad?**
+  - Most campaigns cluster between -2.5 and 5 GM ROAS.
+  - A few campaigns show high spend and high revenue but negative GM ROAS (e.g. AUDREY SHIRT). These are effectively buying revenue at a loss.
+  - On the other hand, some campaigns have lower spend and smaller revenue but much higher GM ROAS (e.g. KINO DRESS, LISA DRESS, MARGNET DRESS), meaning they generate more margin per VND spent.
+  - The _Top/ Bottom 10 Campaigns with Highest/ Lowest GM ROAS_ chart and _Campaign Performance_ table highlights:
+      - Top campaigns and products that deliver strong GM ROAS and are candidates for scaling.
+      - Bottom campaigns with weak GM ROAS and/or very high Ads spend that should be fixed or downsized.
+  - This supports decisions to reallocate budget away from high-spend, low-ROAS campaigns and towards high-ROAS, under-funded campaigns and SKUs.
+    
+- **Campaign Funnel & Engagement**
+  - Volume:
+      - Impressions: ~5.1M
+      - Clicks: ~41.6K → CTR ≈ 0.8%
+      - Inbox + Comments: ~11.4K
+      - Orders: ~1,684 → overall conv ≈ 0.03% of impressions
+  - Cost per step (VND):
+      - CPM ≈ 77K, CPC ≈ 9.5K, Cost Inbox+Comment ≈ 34K, CPA ≈ 234K 
+  => CPM and CPC are moderate, but very few impressions ultimately become orders, and CPA is high. The main problem sits with click/ inbox and final purchase, not at the media buying impressions. 
+  => Recommend to optimize landing pages, checkout flow, test offers, product mix, retarget on engaged users (clickers, inbox/comment) to yield more conversion and turn more users into buyers. 
+
+3️⃣**Product:**
+
+<img width="1184" height="664" alt="Customer and product" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/d2fb426879c67d1bc1a9a5342ee63c87b19406b2/documents/db3.png" />
+
+- **By product: where do ads really matter?**
+  - For most categories, ads drive more revenue than direct sale, especially Áo Tách Set/ Separate Top, Váy Chiết Eo Xòe/ Fit-and-Flare Dress, Set Quần Áo/ Outfit Set Top &  Bottom have the highest units sold and are heavily driven by ads => These are the first places to optimise campaign structure, targeting and creatives.
+  - Some categories, for example, Áo Khoác/ Jacket, Quần Tách Set/ Separate Pants have low volume overall and limited contribution from ads.
+  - Áo khoác (Jacket) has all orders (2 units ordered) from direct sales, none from ads.
+
+- **Are we allocating budget to the right products?**
+  - The dress categories, like Váy Chiết Eo Ôm/ Bodycon Dress, Váy Suông Xòe/ Loose Flared Dress, Váy Chiết Eo Xòe/ Fit-and-Flare Dress, Set váy áo/ Skirt & Top Set, sit in good area with solid budget utilization, above-average GM ROAS and healthy unit volume. These categories should be gradually scaled in campaigns.
+  - Áo Tách Set/ Separate Top stands out with high budget used and large volume but negative GM ROAS. This means we push a lot of budget into a category that doesn’t pay back in margin.
+  - Key take-away: Budget is concentrated in the right product family (dresses). However, we have over-funded low-margin categories (Áo Tách Set/ Separate Top) and under-funded high-margin ones that could be scaled.
+      - Each product has its own drill-through page showing unit economics, channel performance over time, customer tier & age, best campaigns (high GM ROAS) and preferred variants (e.g., colors, materials). This effectively turns every product into a decision card: scale, fix, or cut.
+
+### Recommendations
+
+1️⃣**Reallocate budget to what actually earns margin:**
+
+- Reduce budget on campaigns and products with high spend but negative GM ROAS, especially Áo Tách Set/ Separate Top and low-margin campaigns like AUDREY SHIRT.
+- Reallocate that budget to dress categories with positive GM ROAS and reasonable CPA (Váy Chiết Eo Ôm/ Bodycon, Váy Chiết Eo Xòe/ Fit-and-Flare, Váy Suông Xòe/ Loose Flared, Set váy áo/ Skirt & Top Sets), so more money goes into products that actually generate profit, not just revenue.
+
+2️⃣**Make the funnel more efficient from impression to order:**
+
+- Review campaigns with low CTR and high spend and either pause them or refresh audiences and creatives so we pay for fewer “empty” impressions.
+- For top-spend campaigns, check the landing and product pages (e.g., pricing, stock, messaging) and run simple A/B tests to improve conversion after the click.
+- Create basic retargeting campaigns for people who clicked or messaged but did not buy, using creatives that push best-margin products and current offers.
+
+3️⃣**Use each product’s drill-through page as a decision card:**
+- For every main product category, look at its GM ROAS, CPA, inventory %, and who buys it on the drill-through page before making budget decisions.
+- Scale products that have good GM ROAS and enough stock, fix or re-position products with high volume but low margin, and quietly stop promoting products that are weak on both sales and margin.
+
+4️⃣**Bring customer segments into the decisions:**
+- Use the _Product's drill through_ page to see which customer tiers and age groups respond best to each product family, and tailor campaigns accordingly (for example, dresses towards the strongest tier or age band).
+- For segments that mainly convert via direct sales, rely more on organic, CRM and store activities, and for segments that respond well to ads, focus budgets on the products that show profitable GM ROAS for them.
