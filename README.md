@@ -1,6 +1,6 @@
 # Fashion Marketing & Sales Analysis | Power-BI
 
-![image](https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/tree/beb45876579182227a9a3449e5ca7d39b98ce750/documents)
+![image](https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/d2fb426879c67d1bc1a9a5342ee63c87b19406b2/documents/Fashin_mar.jpg)
 
 Author: Lê Anh Tuấn  
 
@@ -46,7 +46,7 @@ This dashboard visualizes fashion retail marketing campaigns and sales performan
 
 1️⃣ **Overview**
 
-<img width="1641" height="924" alt="Overview" src="https://github.com/user-attachments/assets/94d36d54-b7f8-4603-bf83-bf6ee118e502" />
+<img width="1641" height="924" alt="Overview" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/d2fb426879c67d1bc1a9a5342ee63c87b19406b2/documents/db1.png" />
 
 - **Sales by Channel (Ad vs Direct Sales):**
   - Total revenue is ~5bn, of which ~3bn comes from ad-driven sales => roughly 60% of revenue is ad-driven, and 40% of revenue is from direct sales. However, Gross Margin ROAS (GM ROAS) is only 0.9, meaning every 1 VND of ad spend brings back less than 1 VND in gross margin. Campaigns are therefore critical for scale but not yet efficient.
@@ -59,7 +59,7 @@ This dashboard visualizes fashion retail marketing campaigns and sales performan
 
 2️⃣**Campaign Performance**
 
-<img width="1181" height="663" alt="Campaign Performance" src="https://github.com/user-attachments/assets/48b2021e-1d17-4b7c-8108-24a16b4100f0" />
+<img width="1181" height="663" alt="Campaign Performance" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/d2fb426879c67d1bc1a9a5342ee63c87b19406b2/documents/db2.png" />
 
 - **Overview:**
   - Overall, Ads spend, budget utilization and ads revenue peak in weeks 2->4.
@@ -85,9 +85,9 @@ This dashboard visualizes fashion retail marketing campaigns and sales performan
   => CPM and CPC are moderate, but very few impressions ultimately become orders, and CPA is high. The main problem sits with click/ inbox and final purchase, not at the media buying impressions. 
   => Recommend to optimize landing pages, checkout flow, test offers, product mix, retarget on engaged users (clickers, inbox/comment) to yield more conversion and turn more users into buyers. 
 
-3️⃣**Customer & Product:**
+3️⃣**Product:**
 
-<img width="1184" height="664" alt="Customer and product" src="https://github.com/user-attachments/assets/f726a758-f814-48ae-8afb-b406c0ef9579" />
+<img width="1184" height="664" alt="Customer and product" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/d2fb426879c67d1bc1a9a5342ee63c87b19406b2/documents/db3.png" />
 
 - **By product: where do ads really matter?**
   - For most categories, ads drive more revenue than direct sale, especially Áo Tách Set/ Separate Top, Váy Chiết Eo Xòe/ Fit-and-Flare Dress, Set Quần Áo/ Outfit Set Top &  Bottom have the highest units sold and are heavily driven by ads => These are the first places to optimise campaign structure, targeting and creatives.
@@ -99,12 +99,6 @@ This dashboard visualizes fashion retail marketing campaigns and sales performan
   - Áo Tách Set/ Separate Top stands out with high budget used and large volume but negative GM ROAS. This means we push a lot of budget into a category that doesn’t pay back in margin.
   - Key take-away: Budget is concentrated in the right product family (dresses). However, we have over-funded low-margin categories (Áo Tách Set/ Separate Top) and under-funded high-margin ones that could be scaled.
       - Each product has its own drill-through page showing unit economics, channel performance over time, customer tier & age, best campaigns (high GM ROAS) and preferred variants (e.g., colors, materials). This effectively turns every product into a decision card: scale, fix, or cut.
-        
-<img width="1186" height="662" alt="Product drill through" src="https://github.com/user-attachments/assets/0eb64ee8-ada2-4f29-a6a0-5cad9f3b6979" />
-
-- **Do product categories acquire customers efficiently?**
-  - The worst trade-off is again Áo Tách Set/ Separate Top, where CPA is high and GM ROAS is negative, so we do not recover acquisition cost in gross margin.
-  - Product categories with CPA below average and GM ROAS above average are the best candidates for incremental budget, as they bring profitable growth rather than just revenue.
 
 ### Recommendations
 
