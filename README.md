@@ -1,7 +1,7 @@
 # Fashion Marketing & Sales Analysis | Power-BI
 
-Author: Lê Anh Tuấn
-Tool Used: Power BI
+Author: Lê Anh Tuấn  
+Tool Used: Power BI  
 
 ***
 
