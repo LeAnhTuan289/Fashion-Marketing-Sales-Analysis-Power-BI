@@ -229,48 +229,9 @@ From the data tables above, I created Star Schema Model as below
 |dim-product_list| fact-mkt_camp_by_sku_cost| dim-product_list[Mã sản phẩm] → fact-mkt_camp_by_sku_cost[Mã Sản phẩm]| One to many (1:*)|
 |dim-mkt_camp_cost| fact-mkt_camp_by_sku_cost|dim-mkt_camp_cost[Campaign Id] → fact-mkt_camp_by_sku_cost[Campaign Id]| One to many (1:*)|
 
-## 🧠 Design Thinking Process
-
-Design Thinking is a human-centered, iterative way to solve problems. You start with people, frame the right problem, explore options, build quick versions, and learn by testing and looping until it works.
-
-1️⃣ **Empathize - understand people & context**
-
-Use **5W1H** to ground the work.
-- Who are the stakeholders and users?
-- What decisions do they need to make? What info helps/hurts?
-- Why does this matter (business goals, pain points)?
-- When will they use the solution (cadence, time pressure)?
-- Where will they use it (device, meeting room, field)?
-- How do they work today (tools, workflows, constraints)?
-
-**Outputs:** user personas, roles, pains & gains, current workflow map, list of must-have metrics.
 
 
-2️⃣ **Define point of view - frame the problem clearly**
 
-What are the core reasons users should use this dashboard? If there's no such dashboard, what are their pains?
 
-Define Northstar metrics, points of view the stakeholders want to see. For each point of view, develop growth formula to look deeper the problem
-
-**Outputs:** problem statement, objectives, KPIs, acceptance criteria.
-
-3️⃣ **Ideate - explore solution options**
-
-Start with Growth Formula breakdown from each point of view, brainstorming the dashboard related to that point of view and connect to the Northstar metrics
-
-**Outputs:** shortlisted concepts, information architecture, draft layouts.
-
-4️⃣**Prototype**
-
-Build the smallest thing that proves the idea.
-Questions: What’s the fastest prototype that stakeholders can react to? What sample data or interactions do we need?
-**Outputs:** clickable prototype or dashboard ver 1
-
-5️⃣**Review & iterate**
-
-Put it in front of real users; measure, tweak, repeat.
-
-- Questions: Can they answer their key questions in < N minutes? What’s confusing? What’s missing? What would they change?
-- Metrics: task success rate, time to insight, error points, satisfaction.
 
 Prioritize fixes, next iteration plan, validated solution
