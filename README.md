@@ -1,6 +1,9 @@
 # Fashion Marketing & Sales Analysis | Power-BI
 
+![image](https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/tree/beb45876579182227a9a3449e5ca7d39b98ce750/documents)
+
 Author: Lê Anh Tuấn  
+
 Tool Used: Power BI  
 
 ***
