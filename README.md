@@ -14,19 +14,24 @@ Tool Used: Power BI
 3. [🧠 Design Thinking Process](#design-thinking-process)
 4. [📊 Key Insights & Visualizations](#key-insights--visualizations)
 
-## 📌Overview
-🎯**Project Objectives**
+## 📌 Overview
 
-This dashboard visualizes fashion retail marketing campaigns and sales performance across online and store channels, focusing on campaign efficiency, product performance, customer behavior. The goal is to support decision making to scale campaigns, reallocate budget, push the right products, boost marketing efficiency and commercial impact.
+### 🎯 Project Objectives
 
-❓**Business questions**
-- How marketing budget is being allocated?
-- How campaigns are performing (across campaigns, channels, SKUs etc.)
-- Which campaigns and SKUs drive profitable growth to allocate budget and actions confidently?
+This project aims to help senior managers monitor marketing budget allocation, evaluate campaign effectiveness, and identify which campaigns, product categories, and SKUs generate the strongest revenue and profitability impact.
+
+The dashboard supports data-driven decisions on where to scale, optimize, reduce, or reallocate marketing budget to improve overall marketing efficiency.
+
+### ❓ Business Questions
+
+1. How is the marketing budget allocated and utilized across time, campaigns, product categories, and SKUs?
+
+2. How effectively are marketing campaigns performing in terms of spend efficiency, revenue contribution, ROAS, CPC, and conversion performance?
+
+3. Which campaigns, product categories, and SKUs are driving profitable growth, and where should the company scale, optimize, or reduce marketing investment?
 
 👤**Target Audience**
 - Marketing Team: to track marketing performance and decide which campaigns to scale, pause, or optimize.
-- E-commerce & Digital Sales Managers: to connect campaign spend to product sell-through and remaining inventory and decide which products to push, restock, or phase out.
 - Head of Sales & Marketing: to view revenue, profit, and efficiency of marketing investment at a high level, compare channels (ads vs direct sales) and guide budget allocation
 
 ## 📂 Dataset Description & Data Structure
