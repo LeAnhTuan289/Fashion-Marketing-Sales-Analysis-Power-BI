@@ -144,79 +144,170 @@ From the data tables above, I created Star Schema Model as below
 
 ### 🔍 Dashboard Preview
 
-1️⃣ **Overview**
+---
 
-<img width="1641" height="924" alt="Overview" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/d2fb426879c67d1bc1a9a5342ee63c87b19406b2/documents/db1.png" />
+## 1️⃣ Executive Overview
 
-- **Sales by Channel (Ad vs Direct Sales):**
-  - Total revenue is ~5bn, of which ~3bn comes from ad-driven sales => roughly 60% of revenue is ad-driven, and 40% of revenue is from direct sales. However, Gross Margin ROAS (GM ROAS) is only 0.9, meaning every 1 VND of ad spend brings back less than 1 VND in gross margin. Campaigns are therefore critical for scale but not yet efficient.
-    
-- **How is Campaign Budget allocated?**
-  - Spend is highest in Weeks 2–>4, with overall budget utilization around 80–90% and a few days of clear overspend.But overspending days do not consistently line up with higher profit or GM ROAS, and the scatterplot shows no strong link between high total spend and high Gross Margin ROAS. This suggests room to reallocate budget away from low-GM ROAS campaigns rather than just spending more.
-    
-- **Do campaigns and SKUs drive profitable growth?**
-  - Across most product categories, ads drive more revenue than direct sales, confirming that campaigns successfully push product. Yet many high-revenue categories show low or even negative GM ROAS (e.g., Áo Tách Set/ Separate Top, Váy Chiết Eo Xòe/ Fit-and-Flare Dress) while some smaller-revenue categories are more profitable (e.g., Váy Chiết Eo Ôm/ Bodycon Dress). In other words, we are buying revenue in some areas but not necessarily profitable growth, likely due to COGS and discount structure on those products.
+<img width="1641" height="924" alt="Executive Overview" src="documents/db1.png" />
 
-2️⃣**Campaign Performance**
+### Business Questions Answered
 
-<img width="1181" height="663" alt="Campaign Performance" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/d2fb426879c67d1bc1a9a5342ee63c87b19406b2/documents/db2.png" />
+- How is the marketing budget allocated and utilized over time?
+- Is marketing spend translating into revenue and profit?
+- How much does marketing contribute to total business revenue?
+- Which time periods show stronger or weaker marketing efficiency?
 
-- **Overview:**
-  - Overall, Ads spend, budget utilization and ads revenue peak in weeks 2->4.
-  - Over the same period, Cost Per Acquisistion (CPA) increases while orders through campaigns decline, indicating that each conversion is getting more expensive even as we spend heavily.
+### Key Insights
 
-- **Which campaigns are doing good/ bad?**
-  - Most campaigns cluster between -2.5 and 5 GM ROAS.
-  - A few campaigns show high spend and high revenue but negative GM ROAS (e.g. AUDREY SHIRT). These are effectively buying revenue at a loss.
-  - On the other hand, some campaigns have lower spend and smaller revenue but much higher GM ROAS (e.g. KINO DRESS, LISA DRESS, MARGNET DRESS), meaning they generate more margin per VND spent.
-  - The _Top/ Bottom 10 Campaigns with Highest/ Lowest GM ROAS_ chart and _Campaign Performance_ table highlights:
-      - Top campaigns and products that deliver strong GM ROAS and are candidates for scaling.
-      - Bottom campaigns with weak GM ROAS and/or very high Ads spend that should be fixed or downsized.
-  - This supports decisions to reallocate budget away from high-spend, low-ROAS campaigns and towards high-ROAS, under-funded campaigns and SKUs.
-    
-- **Campaign Funnel & Engagement**
-  - Volume:
-      - Impressions: ~5.1M
-      - Clicks: ~41.6K → CTR ≈ 0.8%
-      - Inbox + Comments: ~11.4K
-      - Orders: ~1,684 → overall conv ≈ 0.03% of impressions
-  - Cost per step (VND):
-      - CPM ≈ 77K, CPC ≈ 9.5K, Cost Inbox+Comment ≈ 34K, CPA ≈ 234K 
-  => CPM and CPC are moderate, but very few impressions ultimately become orders, and CPA is high. The main problem sits with click/ inbox and final purchase, not at the media buying impressions. 
-  => Recommend to optimize landing pages, checkout flow, test offers, product mix, retarget on engaged users (clickers, inbox/comment) to yield more conversion and turn more users into buyers. 
+- **Marketing is the main revenue driver.**  
+  Marketing generated **3.02bn revenue**, contributing **63.34% of total revenue**, while direct revenue reached **1.75bn**. This shows that marketing campaigns play a major role in driving sales for the business.
 
-3️⃣**Product:**
+- **Overall ROAS is strong, but profitability is not stable.**  
+  Overall Marketing ROAS reached **7.67**, meaning every 1 VND spent on marketing generated around 7.67 VND in marketing-attributed revenue. However, profit margin fluctuates significantly by week, showing that high revenue does not always translate into stable profit.
 
-<img width="1184" height="664" alt="Customer and product" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/d2fb426879c67d1bc1a9a5342ee63c87b19406b2/documents/db3.png" />
+- **The most efficient week is not necessarily the highest-spend period.**  
+  Weekly Marketing ROAS peaks at around **9.05**, while other weeks stay around **5.72–7.63**. This suggests that campaign mix and product mix matter more than simply increasing spend.
 
-- **By product: where do ads really matter?**
-  - For most categories, ads drive more revenue than direct sale, especially Áo Tách Set/ Separate Top, Váy Chiết Eo Xòe/ Fit-and-Flare Dress, Set Quần Áo/ Outfit Set Top &  Bottom have the highest units sold and are heavily driven by ads => These are the first places to optimise campaign structure, targeting and creatives.
-  - Some categories, for example, Áo Khoác/ Jacket, Quần Tách Set/ Separate Pants have low volume overall and limited contribution from ads.
-  - Áo khoác (Jacket) has all orders (2 units ordered) from direct sales, none from ads.
-
-- **Are we allocating budget to the right products?**
-  - The dress categories, like Váy Chiết Eo Ôm/ Bodycon Dress, Váy Suông Xòe/ Loose Flared Dress, Váy Chiết Eo Xòe/ Fit-and-Flare Dress, Set váy áo/ Skirt & Top Set, sit in good area with solid budget utilization, above-average GM ROAS and healthy unit volume. These categories should be gradually scaled in campaigns.
-  - Áo Tách Set/ Separate Top stands out with high budget used and large volume but negative GM ROAS. This means we push a lot of budget into a category that doesn’t pay back in margin.
-  - Key take-away: Budget is concentrated in the right product family (dresses). However, we have over-funded low-margin categories (Áo Tách Set/ Separate Top) and under-funded high-margin ones that could be scaled.
-      - Each product has its own drill-through page showing unit economics, channel performance over time, customer tier & age, best campaigns (high GM ROAS) and preferred variants (e.g., colors, materials). This effectively turns every product into a decision card: scale, fix, or cut.
+- **Some campaigns show high budget usage but do not always generate proportional revenue.**  
+  The scatter plot between budget used and marketing revenue indicates that higher budget usage does not always guarantee stronger revenue performance.
 
 ### Recommendations
 
-1️⃣**Reallocate budget to what actually earns margin:**
+#### 1. Strengthen revenue channels beyond paid campaigns
 
-- Reduce budget on campaigns and products with high spend but negative GM ROAS, especially Áo Tách Set/ Separate Top and low-margin campaigns like AUDREY SHIRT.
-- Reallocate that budget to dress categories with positive GM ROAS and reasonable CPA (Váy Chiết Eo Ôm/ Bodycon, Váy Chiết Eo Xòe/ Fit-and-Flare, Váy Suông Xòe/ Loose Flared, Set váy áo/ Skirt & Top Sets), so more money goes into products that actually generate profit, not just revenue.
+- **Where to act:** Revenue mix between marketing-driven revenue and direct revenue.
+- **What to do:** Maintain high-performing campaigns, but also build stronger direct and retention-based channels such as email marketing, loyalty programs, remarketing, customer reactivation, and organic content.
+- **Why it matters:** More than 60% of revenue comes from marketing-driven sales, so the business becomes vulnerable if ad costs rise or campaign performance drops.
+- **Goal:** Keep marketing as a growth driver while reducing overdependence on paid campaigns.
 
-2️⃣**Make the funnel more efficient from impression to order:**
+#### 2. Manage weekly budget based on both ROAS and profit margin
 
-- Review campaigns with low CTR and high spend and either pause them or refresh audiences and creatives so we pay for fewer “empty” impressions.
-- For top-spend campaigns, check the landing and product pages (e.g., pricing, stock, messaging) and run simple A/B tests to improve conversion after the click.
-- Create basic retargeting campaigns for people who clicked or messaged but did not buy, using creatives that push best-margin products and current offers.
+- **Where to act:** Weekly campaign budget allocation and profit margin performance.
+- **What to do:** Review weeks or campaigns with high revenue but weak profit margin. Combine ROAS with profit margin, discount level, product cost, and marketing spend before deciding whether to scale.
+- **Why it matters:** A campaign can generate high revenue but still be inefficient if marketing costs or product costs are too high.
+- **Goal:** Improve marketing efficiency by ensuring that revenue growth also creates healthy profit.
 
-3️⃣**Use each product’s drill-through page as a decision card:**
-- For every main product category, look at its GM ROAS, CPA, inventory %, and who buys it on the drill-through page before making budget decisions.
-- Scale products that have good GM ROAS and enough stock, fix or re-position products with high volume but low margin, and quietly stop promoting products that are weak on both sales and margin.
+#### 3. Replicate the most efficient weekly campaign pattern
 
-4️⃣**Bring customer segments into the decisions:**
-- Use the _Product's drill through_ page to see which customer tiers and age groups respond best to each product family, and tailor campaigns accordingly (for example, dresses towards the strongest tier or age band).
-- For segments that mainly convert via direct sales, rely more on organic, CRM and store activities, and for segments that respond well to ads, focus budgets on the products that show profitable GM ROAS for them.
+- **Where to act:** Campaign and product mix from the highest-ROAS week.
+- **What to do:** Identify which campaigns, SKUs, and categories contributed to the strongest ROAS week, then use them as a benchmark for future budget planning.
+- **Why it matters:** The dashboard shows that efficiency comes from the right campaign/product mix, not just higher spending.
+- **Goal:** Improve average ROAS by scaling proven high-efficiency patterns.
+
+---
+
+## 2️⃣ Campaign Performance
+
+<img width="1181" height="663" alt="Campaign Performance" src="documents/db2.png" />
+
+### Business Questions Answered
+
+- Which campaigns generate the highest marketing revenue?
+- Which campaigns perform best or worst based on ROAS, CPC, conversion performance, and revenue contribution?
+- Where are the main bottlenecks in the marketing funnel?
+- Is marketing revenue concentrated in only a few top campaigns or spread across many campaigns?
+
+### Key Insights
+
+- **Revenue is not concentrated only in the Top 10 campaigns.**  
+  The Top 10 campaigns generated **1.04bn**, accounting for **34.28%** of marketing revenue, while the remaining campaigns contributed **1.99bn**, or **65.72%**. This means long-tail campaigns play a major role in total marketing revenue.
+
+- **The funnel loses many users from impressions to clicks.**  
+  The dashboard shows around **5.11M impressions** but only **41.85K clicks**, meaning the click-through stage is a key bottleneck. Many users see the ads, but only a small share decide to click or interact.
+
+- **High-revenue campaigns are not always the most efficient campaigns.**  
+  For example, **AUDREY SHIRT** generated the highest marketing revenue, but some smaller campaigns such as **LISA DRESS** and **MARGNET DRESS** delivered much stronger ROAS. This means campaign decisions should not be based on revenue alone.
+
+- **The current conversion rate definition may confuse business users.**  
+  The dashboard shows **Conversion Rate = 466.40%**. If this is not a standard click-to-order or visit-to-order conversion rate, the metric should be renamed or clearly explained to avoid misunderstanding.
+
+### Recommendations
+
+#### 1. Optimize the full campaign portfolio, not only the Top 10 campaigns
+
+- **Where to act:** Campaign portfolio, especially campaigns outside the Top 10.
+- **What to do:** Segment campaigns into four action groups: **Scale**, **Optimize**, **Reduce**, and **Stop/Test Again** based on ROAS, spend, revenue contribution, CPC, and conversion performance.
+- **Why it matters:** Campaigns outside the Top 10 contribute more than 60% of marketing revenue, so focusing only on top campaigns would miss many optimization opportunities.
+- **Goal:** Improve overall campaign portfolio efficiency and avoid wasting budget on weak long-tail campaigns.
+
+#### 2. Improve the top-of-funnel conversion from impressions to clicks
+
+- **Where to act:** Impression → Click stage.
+- **What to do:** A/B test ad creatives, product visuals, headlines, offers, CTAs, and audience targeting. Prioritize campaigns with high impressions but low click performance.
+- **Why it matters:** Low click-through performance means the company is paying for exposure but not converting enough attention into traffic or customer interactions.
+- **Goal:** Increase CTR, reduce CPC, and bring more qualified users into the sales funnel.
+
+#### 3. Separate campaigns into revenue drivers and efficiency drivers
+
+- **Where to act:** Budget allocation across campaigns.
+- **What to do:** Maintain budget for high-revenue campaigns that drive scale, but gradually test more budget on high-ROAS campaigns that are currently underfunded.
+- **Why it matters:** High-revenue campaigns help increase sales volume, while high-ROAS campaigns improve marketing efficiency. The company needs both scale and efficiency.
+- **Goal:** Balance revenue growth with better budget efficiency.
+
+#### 4. Clarify KPI definitions for better decision-making
+
+- **Where to act:** KPI naming and metric definitions on the dashboard.
+- **What to do:** Review the current conversion rate formula. If the metric can exceed 100%, rename it to a more accurate term such as **Sales per Contact**, **Order-to-Interaction Ratio**, or add a clear formula note.
+- **Why it matters:** Senior managers need simple and trustworthy KPIs. A conversion rate above 100% may reduce confidence in the dashboard if it is not clearly explained.
+- **Goal:** Improve dashboard clarity and make KPI interpretation easier for business users.
+
+---
+
+## 3️⃣ Product & Sales
+
+<img width="1184" height="664" alt="Product and Sales" src="documents/db3.png" />
+
+### Business Questions Answered
+
+- Which product categories and SKUs generate the strongest sales impact from marketing?
+- Is marketing budget being allocated to the right product categories?
+- Which products should be scaled, optimized, or reduced based on ROAS, spend, revenue, and orders?
+- Is product revenue concentrated in only a few top SKUs or spread across many products?
+
+### Key Insights
+
+- **Product revenue is distributed beyond the Top 10 products.**  
+  The Top 10 products contributed around **37.7%** of revenue, while other products contributed **62.3%**. This means the company should not only focus on best-selling SKUs, because many non-top products still contribute significant revenue.
+
+- **Váy Chiết Eo Ôm is a high-efficiency category with strong ROAS.**  
+  This category generated around **258.05M marketing revenue** with only **11.68M marketing spend**, achieving a strong **Marketing ROAS of 22.09**, much higher than the overall ROAS of **7.67**.
+
+- **Some SKUs inside Váy Chiết Eo Ôm show exceptional efficiency.**  
+  Products such as **Kino Dress**, **Lisa Dress**, and **Ginney Dress** show very high ROAS compared with the overall average, suggesting that this category has strong potential for controlled scaling.
+
+- **Core revenue categories still need efficiency control.**  
+  Categories such as **Váy Chiết Eo Xòe** and **Áo Tách Set** appear to be important revenue and order drivers, but high revenue categories should still be monitored carefully by ROAS, spend, and profit margin before increasing budget.
+
+### Recommendations
+
+#### 1. Gradually scale high-ROAS product categories
+
+- **Where to act:** High-efficiency categories, especially **Váy Chiết Eo Ôm** and its best-performing SKUs.
+- **What to do:** Increase budget gradually by 15–25% for high-ROAS SKUs such as Lisa Dress, Kino Dress, and Ginney Dress, while monitoring ROAS, orders, inventory, and profit margin.
+- **Why it matters:** These products generate strong revenue return with relatively low spend, indicating underutilized marketing potential.
+- **Goal:** Capture additional revenue from high-efficiency products without reducing ROAS through uncontrolled scaling.
+
+#### 2. Protect core revenue categories but avoid scaling blindly
+
+- **Where to act:** High-revenue and high-order categories such as **Váy Chiết Eo Xòe** and **Áo Tách Set**.
+- **What to do:** Maintain their role as core revenue drivers, but evaluate campaign performance by ROAS, profit margin, discount level, inventory, and product-level contribution before increasing budget.
+- **Why it matters:** These categories are important for sales volume, but high revenue does not always mean high efficiency or profitability.
+- **Goal:** Keep stable sales volume while preventing inefficient budget expansion.
+
+#### 3. Build SKU-level decision groups
+
+- **Where to act:** Product and SKU portfolio.
+- **What to do:** Classify SKUs into four groups:  
+  - **Hero Products:** high revenue and stable performance  
+  - **High-ROAS Products:** strong efficiency and potential to scale  
+  - **Optimization Products:** decent sales but weak efficiency  
+  - **Low-Priority Products:** low revenue and low ROAS
+- **Why it matters:** Product-level marketing performance is not concentrated only in the Top 10 SKUs, so SKU-level grouping helps avoid missing hidden opportunities.
+- **Goal:** Make product-level budget decisions more structured and data-driven.
+
+#### 4. Reallocate budget from low-efficiency products to high-efficiency SKUs
+
+- **Where to act:** Product categories or SKUs with high spend but lower ROAS.
+- **What to do:** Review product pricing, discount strategy, creative messaging, product page, and audience targeting. If performance does not improve, shift part of the budget to high-ROAS categories and SKUs.
+- **Why it matters:** Continuing to spend on low-efficiency products can reduce overall marketing ROAS and limit profitable growth.
+- **Goal:** Improve marketing budget efficiency by funding products that generate stronger return per VND spent.
