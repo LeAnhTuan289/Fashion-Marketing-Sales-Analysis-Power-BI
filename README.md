@@ -223,7 +223,7 @@ Budget decisions should not be based only on how much a campaign spends. Senior 
 
 ## 2️⃣ Campaign Performance
 
-<img width="1181" height="663" alt="Campaign Performance" src="documents/db2.png" />
+<img width="1181" height="663" alt="Campaign Performance" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/aac098c7084428ad670d1e9cc600f5d31f80d0da/documents/Screenshot%202026-07-04%20080258.png" />
 
 ### Business Questions Answered
 
