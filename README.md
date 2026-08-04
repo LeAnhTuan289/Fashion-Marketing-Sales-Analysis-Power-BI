@@ -154,7 +154,7 @@ From the data tables above, I created Star Schema Model as below
 
 ## 1️⃣ Executive Overview
 
-<img width="1641" height="924" alt="Executive Overview" src="documents/db1.png" />
+<img width="1641" height="924" alt="Executive Overview" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/84cdf37c26aa6ac7c2e57f2258d128653475d28a/documents/Screenshot%202026-08-04%20223354.png" />
 
 ### Business Questions Answered
 
@@ -223,7 +223,7 @@ Budget decisions should not be based only on how much a campaign spends. Senior 
 
 ## 2️⃣ Campaign Performance
 
-<img width="1181" height="663" alt="Campaign Performance" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/aac098c7084428ad670d1e9cc600f5d31f80d0da/documents/Screenshot%202026-07-04%20080258.png" />
+<img width="1181" height="663" alt="Campaign Performance" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/84cdf37c26aa6ac7c2e57f2258d128653475d28a/documents/Screenshot%202026-08-04%20223416.png" />
 
 ### Business Questions Answered
 
@@ -310,7 +310,7 @@ KPI clarity is critical for decision-making. A metric that is unclear or poorly 
 
 ## 3️⃣ Product & Sales
 
-<img width="1184" height="664" alt="Product and Sales" src="documents/db3.png" />
+<img width="1184" height="664" alt="Product and Sales" src="https://github.com/LeAnhTuan289/Fashion-Marketing-Sales-Analysis-Power-BI/blob/84cdf37c26aa6ac7c2e57f2258d128653475d28a/documents/Screenshot%202026-08-04%20223437.png" />
 
 ### Business Questions Answered
 
